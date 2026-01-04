@@ -1,6 +1,6 @@
 # BITI MEPhI Books Semantic Search
 
-<img width="583" height="400" alt="2k books" src="https://github.com/user-attachments/assets/41e21800-a292-48c0-9f0f-d91599f42e3b" />
+<img width="583" height="332" alt="2k books" src="https://github.com/user-attachments/assets/c8ebea26-fef3-43f3-8dab-d7f44c2cdfc0" />
 
 This project presents a practical semantic search system for the BITI MEPhI university library, aimed at retrieving relevant scientific literature from natural language queries. It relies on dense text representations produced by a Russian scientific BERT model, combines them with unsupervised clustering to reduce search complexity. The developed search system is wrapped in a Telegram bot.
 
