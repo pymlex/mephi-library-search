@@ -2,7 +2,7 @@
 
 <img width="460" height="323" alt="output-onlinepngtools (1)" src="https://github.com/user-attachments/assets/de65d40e-eb45-4a4d-ac65-fdb9a296cda6" />
 
-This repository implements an end to end semantic search pipeline for a university book collection. Textual fields consisting of title plus annotation are preprocessed and embedded with a Russian scientific BERT model. The resulting dense vectors are normalised and stored to allow fast approximate retrieval.
+This project presents a practical semantic search system for the BITI MEPhI university library, aimed at retrieving relevant scientific literature from natural language queries. It relies on dense text representations produced by a Russian scientific BERT model, combines them with unsupervised clustering to reduce search complexity. The developed search system is wrapped in a Telegram bot.
 
 ## Embeddings
 
