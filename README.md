@@ -23,7 +23,7 @@ To reduce the number of comparisons at query time the embedding set is clustered
 - `data/df_metadata.csv` — titles, authors, annotations and other metadata.  
 - `data/labels.npy`, `data/centroids.npy`, `data/centroids_pca.npy` — clustering artifacts.  
 
-##Inference
+## Inference
 
 A simple Telegram bot demonstrates how to serve the search. The core search logic is exposed through a FastAPI service, which loads the trained model, PCA transformation and clustering artifacts, embeds incoming queries and returns matching book metadata via a REST endpoint.
 
