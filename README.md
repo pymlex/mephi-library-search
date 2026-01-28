@@ -8,9 +8,11 @@ This project presents a practical semantic search system for the BITI MEPhI univ
 
 Embeddings are produced by mean pooling token representations from the ruSciBERT model and applying L2 normalisation to each vector. All embeddings are computed in batches and cached to disk to avoid recomputation. The 2k books [dataset](https://www.kaggle.com/datasets/alexzyukov/biti-mephi-2k-books-library/) used for this work is a publicly available BITI MEPhI catalogue.
 
-<img width="783" height="324" alt="image" src="https://github.com/user-attachments/assets/84d7e534-d94f-4705-9dfd-d7dd265064e2" />
+## Compression
 
 To reduce dimensionality and memory footprint, a Principal Component Analysis (PCA) model is trained on the original 768-dimensional embeddings and used to compress them to 227 dimensions while preserving approximately 95% of the variance. The fitted PCA model is saved to disk and reused at inference time. All book embeddings are stored already in the reduced space, and each incoming query embedding is projected with the same PCA transformation before similarity computation.
+
+<img width="783" height="324" alt="image" src="https://github.com/user-attachments/assets/84d7e534-d94f-4705-9dfd-d7dd265064e2" />
 
 ## Clustering and Indexing
 
