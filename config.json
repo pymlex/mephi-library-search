@@ -1,4 +1,4 @@
 {
-  "token": "YOUR_TELEGRAM_BOT_TOKEN",
+  "token": "TELEGRAMBOT_TOKEN",
   "model": "ai-forever/ruSciBERT"
 }
